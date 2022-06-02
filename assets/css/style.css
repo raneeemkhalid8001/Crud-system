@@ -1,0 +1,119 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0b0c10;
+}
+section .crud{
+    text-align: center;
+    color: #c5c6c7;
+    box-shadow: 0px -2px 7px #66fcf1;
+}
+.registration{
+    box-shadow: 0px -2px 7px #66fcf1;
+}
+.registration label{
+    color: #66fcf1;
+    text-transform: capitalize;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+label span{
+    display: inline-block;
+    margin: 3px 0 0 5px;
+}
+.alert{
+    width: 70%;
+}
+::placeholder{
+    color: #c5c6c7;
+    text-transform: capitalize;
+}
+.registration input,.registration textarea,.searchDelete input{
+        display: block;
+        margin-bottom: 10px;
+        margin: auto;
+        border: 1px solid #66fcf1;
+        padding: 15px 8px;
+        border-radius: 5px;
+        background-color: rgba(197, 198, 199, 0.2);
+        width: 70%;
+}
+.searchDelete input{
+    width: 50%;
+    height: 50px;
+    margin: 12px 0 0 15px;
+}
+.registration button{
+    margin: 20px 10px;
+    transition: .6s all;
+}
+.registration button:hover,.delall:hover{
+   color: #7a7c7e;
+   background-color: #b3d6d4 !important;
+}
+.registration button,.delall{
+    width: 130px;
+    border-radius: 7px;
+    border: 1px solid #66fcf1;
+    color: #66fcf1;
+    font-size: 14px;
+}
+.btn{
+    background-color: rgba(197, 198, 199, 0.2) !important;
+}
+hr:not([size]) {
+    height: 3px;
+    margin-top: 25px;
+    background-color: #66fcf1;
+    border-radius: 5px;
+}
+section .list{
+    box-shadow: 0px -2px 7px #66fcf1;
+
+}
+section .list table{
+    color: #c5c6c7;
+}
+.btnIcon{
+    display: inline-block;
+    color: #66fcf1;
+    margin-right: 10px;
+}
+.trash{
+    color: red;
+}
+.delall{
+    display: block;
+    margin: 20px;
+    transition: .6s all;
+}
+.add{
+    width: 168px !important;
+}
+@media (max-width: 600px) {
+    .registration,.list{
+        width: 100% !important;
+    }
+    .employee{
+        padding: 3rem 0 !important;
+    }
+    .registration input,.registration textarea,.searchDelete input{
+        width: 90%;
+    }
+    .registration button{
+        width: 112px;
+    }
+    .searchDelete{
+        flex-direction: column !important;
+    }
+    .searchDelete input{
+        order: 2;
+    }
+    .delall{
+        margin: auto;
+        order: 1;
+    }
+    .list{
+        padding: 0;
+    }
+}
